@@ -1,0 +1,58 @@
+{
+    "schema_version": "1.0",
+    "generated_utc": "2026-08-07T06:05:38Z",
+    "host": "AISH",
+    "asset_id": "PLACEHOLDER-ASSET-ID",
+    "results": [
+        {
+            "practice_no": 5,
+            "far_ref": "b.1.v",
+            "domain": "IA",
+            "coverage": "FULL",
+            "check": "Identify system users and processes",
+            "result": "PASS",
+            "confidence": "HIGH",
+            "evidence": "Get-LocalUser: Guest.Enabled = False"
+        },
+        {
+            "practice_no": 6,
+            "far_ref": "b.1.vi",
+            "domain": "IA",
+            "coverage": "FULL",
+            "check": "Authentication before access",
+            "result": "PASS",
+            "confidence": "HIGH",
+            "evidence": "Get-LocalUser: PasswordRequired = True"
+        },
+        {
+            "practice_no": 10,
+            "far_ref": "b.1.x",
+            "domain": "SC",
+            "coverage": "FULL",
+            "check": "Boundary protection (firewall)",
+            "result": "PASS",
+            "confidence": "HIGH",
+            "evidence": "Get-NetFirewallProfile: AllProfilesEnabled = True"
+        },
+        {
+            "practice_no": 12,
+            "far_ref": "b.1.xii",
+            "domain": "SI",
+            "coverage": "FULL",
+            "check": "Identify, report, correct system flaws timely",
+            "result": "PASS",
+            "confidence": "HIGH",
+            "evidence": "Get-HotFix: DaysSinceLastPatch = 16"
+        },
+        {
+            "practice_no": 15,
+            "far_ref": "b.1.xv",
+            "domain": "SI",
+            "coverage": "FULL",
+            "check": "Real-time malicious code scanning",
+            "result": "PASS",
+            "confidence": "MEDIUM",
+            "evidence": "DefenderActive=False, OtherAVPresent=True"
+        }
+    ]
+}
